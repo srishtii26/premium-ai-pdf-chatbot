@@ -161,20 +161,29 @@ The application workflow includes:
 ```bash
 premium-ai-pdf-chatbot/
 │
+├── assets/
+│   ├── images/
+│   └── style.css
+│
 ├── chatbot/
 │   ├── branding.py
 │   ├── chatui.py
 │   ├── dashboard.py
 │   ├── followups.py
+│   ├── ingest.py
 │   ├── landing.py
 │   ├── logo.py
+│   ├── retrieval.py
 │   ├── statusbar.py
 │   ├── suggestions.py
 │   └── thinking.py
 │
-├── assets/
-│   ├── images/
-│   └── style.css
+├── data/
+│   └── notes.pdf
+│
+├── vectorstore/
+│   ├── index.faiss
+│   └── index.pkl
 │
 ├── app.py
 ├── requirements.txt
@@ -344,6 +353,7 @@ If you like this project, consider giving it a ⭐ on GitHub!
 # 👩‍💻 Developed By
 
 Srishti S Rao
+
 B.Tech – Electronics and Computer Science Engineering (AI/ML Specialization)
 
 Christ University (Deemed to be University)
