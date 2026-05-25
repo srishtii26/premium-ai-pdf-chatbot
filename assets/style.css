@@ -1,0 +1,174 @@
+/* ---------------- GLOBAL ---------------- */
+
+body {
+    background: #0B0F19;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0B0F19,
+        #111827
+    );
+    color: white;
+}
+
+/* ---------------- MAIN CONTAINER ---------------- */
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1100px;
+}
+
+/* ---------------- TITLES ---------------- */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+h2, h3 {
+    color: #E5E7EB;
+}
+
+/* ---------------- SUBTITLE ---------------- */
+
+p {
+    color: #9CA3AF;
+}
+
+/* ---------------- CHAT BUBBLES ---------------- */
+
+.stChatMessage {
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 14px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* User message */
+
+[data-testid="stChatMessage"]:has(
+[data-testid="chatAvatarIcon-user"]
+) {
+    background: linear-gradient(
+        135deg,
+        rgba(79,70,229,0.25),
+        rgba(99,102,241,0.12)
+    );
+}
+
+/* Assistant message */
+
+[data-testid="stChatMessage"]:has(
+[data-testid="chatAvatarIcon-assistant"]
+) {
+    background: rgba(255,255,255,0.05);
+}
+
+/* ---------------- INPUT BOX ---------------- */
+
+.stChatInputContainer {
+    background: rgba(17,24,39,0.95);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 8px;
+}
+
+textarea {
+    color: white !important;
+}
+
+/* ---------------- BUTTONS ---------------- */
+
+.stButton button {
+    background: linear-gradient(
+        135deg,
+        #4F46E5,
+        #7C3AED
+    );
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 24px rgba(99,102,241,0.35);
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+section[data-testid="stSidebar"] {
+    background: rgba(17,24,39,0.95);
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Sidebar titles */
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: white;
+}
+
+/* ---------------- FILE UPLOADER ---------------- */
+
+[data-testid="stFileUploader"] {
+    background: rgba(255,255,255,0.04);
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px dashed rgba(255,255,255,0.15);
+}
+
+/* ---------------- SLIDER ---------------- */
+
+.stSlider {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* ---------------- SCROLLBAR ---------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4B5563;
+}
+
+/* ---------------- SPINNER ---------------- */
+
+[data-testid="stSpinner"] {
+    color: #8B5CF6;
+}
+
+/* ---------------- FOOTER REMOVE ---------------- */
+
+footer {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
